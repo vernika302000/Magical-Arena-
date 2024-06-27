@@ -16,3 +16,22 @@ Player B attacks and rolls die. Die roll : 4. Player A defends and rolls die. Di
 Attack damage is 4 * 5 = 20 ; Defending strength = 5 * 3 = 15 ; Player A health reduced by 5 to 45
 
 And so on
+
+
+## Design
+
+The project is designed with simplicity in mind. It consists of the following classes:
+- `Player`: Represents a player with health, strength, and attack attributes.
+- `Dice`: Simulates a six-sided dice.
+- `Arena`: Manages the fight between two players.
+- `Main`: The entry point for the application.
+
+## How to Run
+
+1. Clone the repository
+2. Navigate to the project directory
+3. if your are using Visual studio code then simply build and run java by right clicking on the main.java file
+4. For running the test cases maven must be installed and path must be added in your environment variables and then you can simply run the test cases using run test option in vs code.
+
+
+`Happy Coding` !
