@@ -2,7 +2,7 @@ package com.qa.nal;
 
 import java.util.Random;
 
-public class Arena {
+public class Arena { // defining a arena class with player and constructor
     private Player playerA;
     private Player playerB;
     private Random random;
@@ -19,11 +19,11 @@ public class Arena {
 
         while (playerA.isAlive() && playerB.isAlive()) {
             takeTurn(first, second);
-            if (!second.isAlive()) break;
+            if (!second.isAlive()) break; // checking whether second player is alive or not
             takeTurn(second, first);
         }
 
-        if (playerA.isAlive()) {
+        if (playerA.isAlive()) { // printin the winner and exiting.
             System.out.println("Player A wins!");
         } else {
             System.out.println("Player B wins!");
