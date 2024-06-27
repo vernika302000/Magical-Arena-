@@ -38,7 +38,7 @@ public class Arena { // defining a arena class with player and constructor
         int damageDefended = defender.defend() * defendRoll;
         int damageToInflict = damageDealt - damageDefended;
 
-        if (damageToInflict > 0) {
+        if (damageToInflict > 0) { // adding the defender attacking logic 
             defender.reduceHealth(damageToInflict);
             System.out.println("Attacker inflicts " + damageToInflict + " damage to defender. Defender's health is now " + defender.getHealth());
         } else {
